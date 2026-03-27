@@ -49,10 +49,14 @@ function getVirtualPath(filepath) {
 
 const tree = {
   name: "genrojotree",
+  
+  
   tree: {
     $className: "DataModel",
-
+    emitLegacyScripts: false,
+    
     ReplicatedStorage: {
+      Client: { $path: "src/startup/Client.client.luau", },
       Shared: {
         $className: "Folder",
         Services: { $className: "Folder", },
@@ -68,13 +72,7 @@ const tree = {
       Services: { $className: "Folder", },
       Classes: { $className: "Folder", },
       Modules: { $className: "Folder", },
-    },
-
-    StarterPlayer: {
-      StarterPlayerScripts: {
-        Client: { $path: "src/startup/Client.client.luau", }
-      },
-    },
+    }
   }
 };
 
