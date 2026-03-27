@@ -8,12 +8,12 @@
     "ReplicatedStorage": {
       "Client": {
         "$path": "src/startup/Client.client.luau"
-      }
+      },
       
       "Shared": {
         "$className": "Folder",
         "Services": {
-          "$className": "Folder",
+          "$className": "Folder"
         },
         "Classes": {
           "$className": "Folder"
