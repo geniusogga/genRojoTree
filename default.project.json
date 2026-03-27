@@ -1,8 +1,15 @@
 {
   "name": "genrojotree",
+  "emitLegacyScripts": false,
+  
   "tree": {
     "$className": "DataModel",
+    
     "ReplicatedStorage": {
+      "Client": {
+        "$path": "src/startup/Client.client.luau"
+      }
+      
       "Shared": {
         "$className": "Folder",
         "Services": {
@@ -49,13 +56,6 @@
       },
       "Modules": {
         "$className": "Folder"
-      }
-    },
-    "StarterPlayer": {
-      "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/startup/Client.client.luau"
-        }
       }
     }
   }
