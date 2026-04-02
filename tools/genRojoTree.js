@@ -47,7 +47,7 @@ function getVirtualPath(filepath) {
   };
 }
 
-const const tree = {
+const tree = {
   "name": "name-goes-here",
   "emitLegacyScripts": false,
 
