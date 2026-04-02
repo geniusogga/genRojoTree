@@ -47,31 +47,46 @@ function getVirtualPath(filepath) {
   };
 }
 
-const tree = {
-  name: "genrojotree",
-  
-  
-  tree: {
-    $className: "DataModel",
-    emitLegacyScripts: false,
-    
-    ReplicatedStorage: {
-      Client: { $path: "src/startup/Client.client.luau", },
-      Shared: {
-        $className: "Folder",
-        Services: { $className: "Folder", },
-        Classes: {  $className: "Folder", },
-        Modules: { $className: "Folder", }
-      },
-      Packages: { $path: "Packages", },
-      UI: { $path: "src/ui", },
-    },
+const const tree = {
+  "name": "name-goes-here",
+  "emitLegacyScripts": false,
 
-    ServerScriptService: {
-      Server: { $path: "src/startup/Server.server.luau", },
-      Services: { $className: "Folder", },
-      Classes: { $className: "Folder", },
-      Modules: { $className: "Folder", },
+  "tree": {
+    "$className": "DataModel",
+    
+    "ReplicatedStorage": {
+      "Startup": {
+        "$className" : "Folder",
+        "Client": {
+          "$path": "src/startup/Client.client.luau"
+        },
+        "MountUI": {
+          "$path" : "src/startup/MountUI.luau"
+        }
+      },
+      
+      "Shared": {
+        "$className": "Folder",
+        "Core" : {
+          "$className" : "Folder",
+          "$path" : "src/core"
+        },
+        "Game" : {
+          "$className" : "Folder",
+          "$path" : "src/game"
+        }
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    },
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/startup/Server.server.luau"
+      },
+      "ServerPackages": {
+        "$path" : "ServerPackages"
+      }
     }
   }
 };
